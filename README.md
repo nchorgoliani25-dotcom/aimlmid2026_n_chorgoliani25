@@ -25,6 +25,7 @@ This result indicates a very strong positive linear correlation between the vari
 
 ### Visualization
 The scatter plot below shows the relationship between X and Y values, along with a fitted linear trend line.
+![Correlation Plot](correlation_plot.png)
 
 ---
 
