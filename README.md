@@ -130,13 +130,46 @@ resulting in low spam feature values and correct classification as legitimate.
 ### Visualizations (#7)
 
 #### Visualization 1 – Class Distribution
-A bar chart was created to visualize the distribution of spam versus legitimate emails in the dataset.  
+A bar chart was created to visualize the distribution of spam versus legitimate emails in the dataset.
 This visualization shows that the dataset is relatively balanced, which helps prevent bias during model training.
 
+```python
+import matplotlib.pyplot as plt
+
+counts = df['is_spam'].value_counts()
+labels = ['Legitimate', 'Spam']
+
+plt.figure()
+plt.bar(labels, counts)
+plt.title('Class Distribution of Emails')
+plt.xlabel('Email Class')
+plt.ylabel('Number of Emails')
+plt.show()
+```
 #### Visualization 2 – Confusion Matrix Heatmap
-A heatmap representation of the confusion matrix was generated using matplotlib.  
+A heatmap representation of the confusion matrix was generated using matplotlib.
 The visualization highlights that the model correctly classifies most emails, with very few false positives and false negatives.
 
+```python
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
+
+cm = confusion_matrix(y_test, y_pred)
+
+plt.figure()
+sns.heatmap(
+    cm,
+    annot=True,
+    fmt='d',
+    xticklabels=['Legitimate', 'Spam'],
+    yticklabels=['Legitimate', 'Spam']
+)
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix Heatmap')
+plt.show()
+```
 ---
 
 ### Conclusion
