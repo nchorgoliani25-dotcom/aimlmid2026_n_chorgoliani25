@@ -18,4 +18,5 @@ This indicates a very strong positive linear correlation between the variables.
 ### Visualization
 The scatter plot below shows the relationship between X and Y values, along with a fitted linear trend line.
 
-![Correlation Plot](figures/correlation_plot.png)
+![Correlation Plot](correlation_plot.png)
+
