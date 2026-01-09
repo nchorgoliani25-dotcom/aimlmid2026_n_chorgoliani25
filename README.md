@@ -20,3 +20,36 @@ The scatter plot below shows the relationship between X and Y values, along with
 
 ![Correlation Plot](correlation_plot.png)
 
+## Task 2 – Spam Email Classification using Logistic Regression
+
+### Dataset
+The dataset consists of 2500 email records with the following features:
+- words
+- links
+- capital_words
+- spam_word_count  
+The target variable is `is_spam`.
+
+### Methodology
+A Logistic Regression classifier was used to distinguish between spam and non-spam emails.
+The dataset was split into training (80%) and testing (20%) sets.
+Model training was performed using scikit-learn with a maximum of 1000 iterations.
+
+### Results
+- **Accuracy:** 94.6%
+
+**Confusion Matrix:**
+- True Negatives: 229
+- False Positives: 4
+- False Negatives: 23
+- True Positives: 244
+
+**Classification Performance:**
+- Precision (Spam): 0.98
+- Recall (Spam): 0.91
+- F1-score (Spam): 0.95
+
+These results indicate that the model performs very well in detecting spam emails with high precision and recall.
+
+### Conclusion
+Logistic Regression proved to be an effective and interpretable machine learning model for spam email classification. Such models can be used as a foundational component in cybersecurity email filtering systems.
