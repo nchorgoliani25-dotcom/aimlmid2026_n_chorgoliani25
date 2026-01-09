@@ -52,7 +52,7 @@ A **Logistic Regression** classifier was used to distinguish between spam and le
 Steps performed:
 1. The dataset was loaded using pandas.
 2. Features and target labels were separated.
-3. The data was split into **training (80%)** and **testing (20%)** sets.
+3. The data was split into training (70%) and testing (30%) sets.
 4. A Logistic Regression model with `max_iter = 1000` was trained using scikit-learn.
 5. Model performance was evaluated on unseen test data.
 
