@@ -41,7 +41,8 @@ The dataset contains **2500 email records** with the following features:
 The target variable is `is_spam` (1 = spam, 0 = legitimate).
 
 **Dataset file:**  
-emails.csv (uploaded in this repository)
+[emails.csv](emails.csv)
+
 
 ---
 
